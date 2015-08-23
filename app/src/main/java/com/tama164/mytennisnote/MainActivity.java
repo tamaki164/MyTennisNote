@@ -2,6 +2,7 @@ package com.tama164.mytennisnote;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,7 +10,7 @@ import android.view.MenuItem;
 public class MainActivity extends Activity {
 
     public static final String TAG_NOTE = "tag_note";
-    public static final String TAG_STATISTICS = "tag_note";
+    public static final String TAG_STATISTICS = "tag_statistics";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,8 @@ public class MainActivity extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_add_note) {
+            startActivity(new Intent(this, MemoActivity.class));
             return true;
         }
 
