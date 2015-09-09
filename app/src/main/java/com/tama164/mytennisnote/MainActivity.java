@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.tama164.mytennisnote.util.DevLog;
+
 public class MainActivity extends Activity {
+
+    private final String TAG = this.getClass().getSimpleName();
 
     public static final String TAG_NOTE = "tag_note";
     public static final String TAG_STATISTICS = "tag_statistics";
@@ -48,6 +52,7 @@ public class MainActivity extends Activity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_add_note) {
             startActivity(new Intent(this, MemoActivity.class));
+            DevLog.d(TAG, "add note is selected.");
             return true;
         }
 
