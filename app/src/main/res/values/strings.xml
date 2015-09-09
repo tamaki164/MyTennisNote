@@ -13,4 +13,10 @@
     <string name="button_save">Save</string>
     <string name="button_cancel">Cancel</string>
     <string name="action_add_note">Add</string>
+    <string name="radio_1set">1 set</string>
+    <string name="radio_3set">3 set</string>
+    <string name="radio_5set">5 set</string>
+    <string name="score_bar">-</string>
+    <string name="label_opponent">Opponent</string>
+    <string name="label_you">You</string>
 </resources>

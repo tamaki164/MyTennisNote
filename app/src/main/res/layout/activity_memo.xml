@@ -40,37 +40,105 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title"
-                    android:id="@+id/textView" />
+                    android:id="@+id/memo_label_title" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/editText" />
+                    android:id="@+id/memo_title" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/date"
-                    android:id="@+id/textView2" />
+                    android:id="@+id/memo_label_date" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="date"
                     android:ems="10"
-                    android:id="@+id/editText2" />
+                    android:id="@+id/memo_date" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/courte_surface"
-                    android:id="@+id/textView3" />
+                    android:id="@+id/memo_label_surface" />
 
-                <ToggleButton
-                    android:layout_width="wrap_content"
+                <Spinner
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New ToggleButton"
-                    android:id="@+id/toggleButton" />
+                    android:id="@+id/memo_spinner_surface"
+                    android:spinnerMode="dropdown" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/layout_memo_match_result">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_1set"
+                            android:id="@+id/radio_1set" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_3set"
+                            android:id="@+id/radio_3set" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_5set"
+                            android:id="@+id/radio_5set" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_you"
+                            android:id="@+id/textView" />
+
+                        <NumberPicker
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/numberPicker" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/score_bar"
+                            android:id="@+id/memo_label_bar" />
+
+                        <NumberPicker
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/numberPicker2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_opponent"
+                            android:id="@+id/memo_label_opponent" />
+                    </LinearLayout>
+
+                </LinearLayout>
 
             </LinearLayout>
         </FrameLayout>
